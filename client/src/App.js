@@ -4,7 +4,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    response: [],
+    response: '',
     post: '',
     responseToPost: '',
   };
@@ -41,19 +41,16 @@ class App extends Component {
 
       // Create Row & Columns
       const row = document.createElement("tr")
-      const col_name = document.createElement("td")
-      const col_url = document.createElement("td")
-      const col_tweetVolume = document.createElement("td")
+      const col_trendName = document.createElement("td")
+      const col_trendVolume = document.createElement("td")
 
       // Fill them with data
-      col_name.innerText = trend.name
-      col_url.innerText = trend.url
-      col_tweetVolume.innerText = trend.tweet_volume
+      col_trendName.innerHTML = `<a href='${trend.url}'>${trend.name}</a>`
+      col_trendVolume.innerText = trend.tweet_volume
 
       // Append Children
-      row.appendChild(col_name)
-      row.appendChild(col_url)
-      row.appendChild(col_tweetVolume)
+      row.appendChild(col_trendName)
+      row.appendChild(col_trendVolume)
       dataTable.appendChild(row)
       
     })
