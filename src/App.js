@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+var Twit = require('twit')
+
 class App extends Component {
 
   constructor(props) {
@@ -22,21 +24,25 @@ class App extends Component {
         console.log('Data [%s]', data);
     };
 
-    var config = {
-      "consumerKey": "hR8Ew7aaaWIdNPJFFI3mTyAPv",
-      "consumerSecret": "treejdKGK0WGQJfnCdN3rpaI6tKPPIu7hna2OSR841MamXfXDI",
-      "accessToken": "2888180595-M7T0VQgObd74OTLaBwreZf6BPKJM1aN8iYgpCsX",
-      "accessTokenSecret": "7Qsf2M5VNmsSTOKBXMafFi1BDHWMagy1SLsVtMOESJMOE",
-      "callBackUrl": "https://elharony.github.io/Twitter-Trend-Fetcher/"
-    }
+    var T = new Twit({
+      consumer_key:         'hR8Ew7aaaWIdNPJFFI3mTyAPv',
+      consumer_secret:      'treejdKGK0WGQJfnCdN3rpaI6tKPPIu7hna2OSR841MamXfXDI',
+      access_token:         '2888180595-M7T0VQgObd74OTLaBwreZf6BPKJM1aN8iYgpCsX',
+      access_token_secret:  '7Qsf2M5VNmsSTOKBXMafFi1BDHWMagy1SLsVtMOESJMOE',
+      timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
+      strictSSL:            true,     // optional - requires SSL certificates to be valid.
+    })
 
-    var TwitApp = require('twitter-node-client').Twitter;
+    // var config = {
+    //   "callBackUrl": "https://elharony.github.io/Twitter-Trend-Fetcher/"
+    // id: '2888180595'
+    // }
 
-    var twitter = new TwitApp(config);
+    T.get('search/tweets', { q: 'banana since:2011-07-11', count: 100 }, function(err, data, response) {
+      console.log(data)
+    })
 
-    twitter.getTweet({ id: '2888180595'}, error, success);
   }
-
 
 
   render() {

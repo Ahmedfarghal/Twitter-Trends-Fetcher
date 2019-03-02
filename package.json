@@ -9,8 +9,9 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
+    "twit": "^2.2.11",
     "twitter": "^1.7.1",
-    "twitter-node-client": "0.0.6"
+    "twitter-node-client": "git+https://github.com/BoyCook/TwitterJSClient.git"
   },
   "scripts": {
     "predeploy": "npm run build",
