@@ -1,14 +1,14 @@
 {
-  "main.css": "/Twitter-Trend-Fetcher/static/css/main.4fcd2505.chunk.css",
-  "main.js": "/Twitter-Trend-Fetcher/static/js/main.474b8744.chunk.js",
-  "main.js.map": "/Twitter-Trend-Fetcher/static/js/main.474b8744.chunk.js.map",
-  "static/js/1.88da6aaa.chunk.js": "/Twitter-Trend-Fetcher/static/js/1.88da6aaa.chunk.js",
-  "static/js/1.88da6aaa.chunk.js.map": "/Twitter-Trend-Fetcher/static/js/1.88da6aaa.chunk.js.map",
-  "runtime~main.js": "/Twitter-Trend-Fetcher/static/js/runtime~main.917628b1.js",
-  "runtime~main.js.map": "/Twitter-Trend-Fetcher/static/js/runtime~main.917628b1.js.map",
-  "static/media/logo.svg": "/Twitter-Trend-Fetcher/static/media/logo.5d5d9eef.svg",
-  "static/css/main.4fcd2505.chunk.css.map": "/Twitter-Trend-Fetcher/static/css/main.4fcd2505.chunk.css.map",
+  "main.css": "/Twitter-Trend-Fetcher/static/css/main.c5598494.chunk.css",
+  "main.js": "/Twitter-Trend-Fetcher/static/js/main.4a4e48d2.chunk.js",
+  "main.js.map": "/Twitter-Trend-Fetcher/static/js/main.4a4e48d2.chunk.js.map",
+  "runtime~main.js": "/Twitter-Trend-Fetcher/static/js/runtime~main.86f9d582.js",
+  "runtime~main.js.map": "/Twitter-Trend-Fetcher/static/js/runtime~main.86f9d582.js.map",
+  "static/js/2.6dfb70c3.chunk.js": "/Twitter-Trend-Fetcher/static/js/2.6dfb70c3.chunk.js",
+  "static/js/2.6dfb70c3.chunk.js.map": "/Twitter-Trend-Fetcher/static/js/2.6dfb70c3.chunk.js.map",
   "index.html": "/Twitter-Trend-Fetcher/index.html",
-  "precache-manifest.379de77a1e78356203f1902d1715bf1c.js": "/Twitter-Trend-Fetcher/precache-manifest.379de77a1e78356203f1902d1715bf1c.js",
-  "service-worker.js": "/Twitter-Trend-Fetcher/service-worker.js"
+  "precache-manifest.9dda142f5cfa35fb3bb0cf1c25bfb69f.js": "/Twitter-Trend-Fetcher/precache-manifest.9dda142f5cfa35fb3bb0cf1c25bfb69f.js",
+  "service-worker.js": "/Twitter-Trend-Fetcher/service-worker.js",
+  "static/css/main.c5598494.chunk.css.map": "/Twitter-Trend-Fetcher/static/css/main.c5598494.chunk.css.map",
+  "static/media/logo.svg": "/Twitter-Trend-Fetcher/static/media/logo.5d5d9eef.svg"
 }

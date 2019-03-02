@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Twitter-Trend-Fetcher/precache-manifest.379de77a1e78356203f1902d1715bf1c.js"
+  "/Twitter-Trend-Fetcher/precache-manifest.9dda142f5cfa35fb3bb0cf1c25bfb69f.js"
 );
 
 workbox.clientsClaim();
