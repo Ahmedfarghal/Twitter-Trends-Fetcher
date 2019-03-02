@@ -27,7 +27,7 @@ class App extends Component {
       "consumerSecret": "treejdKGK0WGQJfnCdN3rpaI6tKPPIu7hna2OSR841MamXfXDI",
       "accessToken": "2888180595-M7T0VQgObd74OTLaBwreZf6BPKJM1aN8iYgpCsX",
       "accessTokenSecret": "7Qsf2M5VNmsSTOKBXMafFi1BDHWMagy1SLsVtMOESJMOE",
-      "callBackUrl": "https://www.elharony.com/twitter-trend/"
+      "callBackUrl": "https://elharony.github.io/Twitter-Trend-Fetcher/"
     }
 
     var TwitApp = require('twitter-node-client').Twitter;
