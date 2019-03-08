@@ -27,16 +27,47 @@ class App extends Component {
       .catch(err => console.log(err));
   }
   callApi = async () => {
-    const response = await fetch('/api/hello');
+    const response = await fetch('/api/trends/get');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
   };
 
 
+  handleSubmit = async e => {
+    e.preventDefault()
+    const response = await fetch('/api/trends/post', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ post: this.state.post }),
+    })
+    const body = await response.text()
+    
+    this.updateTrends(body)
+  }
+
+  updateTrends = (newTrends) => {
+    
+    // Parse Data [STRING into JSON]
+    const parsedData = JSON.parse(newTrends)
+    const trends = parsedData["0"]["trends"]
+
+    // State Management
+    this.setState({ response: newTrends })
+
+    // Show Data
+    this.showData(trends)
+  }
+
   showData = (trends) => {
     const dataTable = document.querySelector("#datashow")
 
+    // Clear current data
+    dataTable.innerHTML = ""
+
+    // Fill it with trends
     trends.map(trend => {
 
       // Create Row & Columns
@@ -62,11 +93,7 @@ render() {
     return (
       <div className="App">
 
-        <table id="datashow">
-        </table>
-
-        <p>{this.state.response}</p>
-        <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
           <p>
             <strong>Post to Server:</strong>
           </p>
@@ -77,7 +104,12 @@ render() {
           />
           <button type="submit">Submit</button>
         </form>
-        <p>{this.state.responseToPost}</p>
+        {/* <p>{this.state.responseToPost}</p> */}
+
+        <table id="datashow">
+        </table>
+
+        
       </div>
     );
   }
