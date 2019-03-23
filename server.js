@@ -19,7 +19,6 @@ var T = new Twit({
 });
 
 twitterFetch = async (id = 23424802) => {
-    console.log("tested")
     T.get("trends/place", { id: id }, function(err, data, response) {
         app.get('/api/trends/get', (req, res) => {
             res.send({express: JSON.stringify(data)})

@@ -5,9 +5,8 @@ class App extends Component {
 
   state = {
     response: '',
-    post: '',
-    responseToPost: '',
-  };
+    post: ''
+  }
 
   componentDidMount() {
     this.callApi()
@@ -24,14 +23,14 @@ class App extends Component {
         this.showData(trends)
 
       })
-      .catch(err => console.log(err));
+      .catch(err => console.log(err))
   }
   callApi = async () => {
-    const response = await fetch('/api/trends/get');
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-    return body;
-  };
+    const response = await fetch('/api/trends/get')
+    const body = await response.json()
+    if (response.status !== 200) throw Error(body.message)
+    return body
+  }
 
 
   handleSubmit = async e => {
@@ -104,7 +103,6 @@ render() {
           />
           <button type="submit">Submit</button>
         </form>
-        {/* <p>{this.state.responseToPost}</p> */}
 
         <table id="datashow">
         </table>
