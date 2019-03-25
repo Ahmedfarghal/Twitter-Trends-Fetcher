@@ -2,7 +2,7 @@
 A simple Web Application to get `Twitter Trends` using Twit Package & [Twitter API Credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)!
 
 ## Getting Started
-- [Clone the repo](https://github.com/elharony/Twitter-Trends-Fetcher.git)
+- `git clone https://github.com/elharony/Twitter-Trends-Fetcher.git`
 - `cd Twitter-Trends-Fetcher`
 - `npm install`
 - Run the NodeJS Server using [nodemon](https://www.npmjs.com/package/nodemon): `nodemon server.js` -- **Port: 5000**
