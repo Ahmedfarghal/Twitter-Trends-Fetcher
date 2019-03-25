@@ -1,5 +1,5 @@
 # Twitter Trends Fetcher
-A simple Web Application to get `Twitter Trends` using Twit Package & [Twitter API Credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)!
+A JavaScipt Application fetches `Twitter Trends` using [Twit Package](https://www.npmjs.com/package/twit) & [Twitter API Credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) according to a given location/country [WOEID](http://woeid.rosselliot.co.nz/lookup/)!
 
 ## Getting Started
 - `git clone https://github.com/elharony/Twitter-Trends-Fetcher.git`
