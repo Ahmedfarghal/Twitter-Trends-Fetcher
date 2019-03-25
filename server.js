@@ -18,7 +18,7 @@ var T = new Twit({
     strictSSL: true // optional - requires SSL certificates to be valid.
 });
 
-twitterFetch = async (id = 23424802) => {
+twitterFetch = async (id = 1) => {
     T.get("trends/place", { id: id }, function(err, data, response) {
         app.get('/api/trends/get', (req, res) => {
             res.send({express: JSON.stringify(data)})
